@@ -1,0 +1,182 @@
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -20px;
+  gap: 80px;
+  width: 100%;
+  min-height: 600px;
+}
+
+/* Image styling */
+.about-image img {
+  width: 290px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Content styling */
+.about-content {
+  max-width: 500px;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: rgba(22, 0, 65, 1);
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: left;
+  font-style: italic;
+}
+
+.about-para {
+  font-size: 0.5rem;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.about-content button {
+  background-color: rgba(22, 0, 65, 1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin: 8px;
+  position: relative;
+  top: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.about-content button:hover {
+  background-color: rgba(22, 0, 65, 0.8);
+}
+
+/* Media queries */
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  .about-section {
+    padding: 40px 20px;
+  }
+  
+  .about-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-content p, .about-para {
+    font-size: 1.2rem;
+  }
+
+  .about-image img {
+    width: 600px;
+  }
+}
+
+/* Tablets and smaller devices */
+@media (max-width: 1024px) {
+  .about-section {
+   padding: 50px 
+  }
+  
+.about-content{
+  padding: 10px ; 
+}
+  .about-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-content p{
+    font-size: 1.25rem;
+  }
+  .about-para {
+    font-size: 1rem;
+  }
+  .about-image img {
+   width: 100%;
+    height: 40vh;
+    
+  }
+}
+
+/* Mobile screens (up to 768px) */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 0 10px;
+  }
+
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p, .about-para {
+    font-size: 1.1rem;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .about-content button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Extra small devices (up to 480px) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 30px 0px;
+    width: 100%;
+    
+   
+  }
+
+  .about-content h2 {
+    font-size: 1.35rem;
+    position: relative;
+    bottom:50px;
+  }
+
+  .about-image img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 1px;
+    position: relative;
+    top: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-content p{
+    font-size: 1.3rem;
+    position: relative;
+    bottom: 50px;
+   margin: 10px;
+   
+  }
+  .about-para {
+    font-size: 1rem;
+    margin: 20px;
+    position: relative;
+    bottom: 40px;
+  }
+
+  .about-content button {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+    position: relative;
+    left: 90px;
+    top: 2px;
+  }
+}

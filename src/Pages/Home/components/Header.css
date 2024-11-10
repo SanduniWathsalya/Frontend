@@ -1,0 +1,244 @@
+/* Header Container */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(205, 193, 214, 0.308);
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  height: 60px;
+  padding: 0 20px; /* Add padding for spacing */
+}
+
+/* Header on Scroll */
+.header.scrolled {
+  background-color: rgba(216, 201, 229, 0.8);
+}
+
+/* School name and subtitle color changes on scroll */
+.header.scrolled .school-name {
+  color: rgba(20, 12, 115, 0.96);
+}
+
+
+/* Navbar link styles */
+.navbar-links .navItem a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.96);
+  font-weight: bold;
+}
+.navbar-links .navItem a:hover {
+  color:rgba(20, 12, 115, 0.96);
+}
+
+.header.scrolled .navbar-links .navItem a {
+  color: rgba(20, 12, 115, 0.96);
+}
+
+/* Hover color change */
+.header.scrolled .navbar-links .navItem a:hover {
+  color: rgba(255, 255, 255, 0.96);
+}
+
+/* Logo and Navigation */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: 90px;
+ position: relative;
+ right: 10px;
+}
+
+/* School Name and Subtitle Styling */
+.school-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.96);
+  margin-bottom: 8px;
+  position: relative;
+  right: 30px;
+}
+
+
+/* Active Link Styling */
+.active {
+  background-color: rgba(84, 76, 173, 0.96);
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap; 
+  position: relative;
+  left: 2px;
+}
+
+.navItem {
+  margin-right: 40px;
+  white-space: nowrap;
+}
+
+
+/* Mobile Menu Icon */
+.menu-icon {
+  position: absolute;
+  top: 15px; /* Adjust to align vertically as needed */
+  right: 20px; /* Aligns icon to the right corner */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.75rem;
+  height: 1.15rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1100; /* Ensure it stays above other elements */
+}
+
+.close-icon {
+  font-size: 2rem;
+  color: rgba(20, 12, 115, 0.96);
+  cursor: pointer;
+}
+
+
+/* Menu bars */
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(20, 12, 115, 0.96);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/* Transform bars into a close (X) icon */
+.menu-icon2 .bar2.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon2 .bar2.open:nth-child(2) {
+  opacity: 0; /* Hide middle bar */
+}
+
+.menu-icon2.bar2.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: absolute;
+  top: 2px; /* Adjust to the height of your header */
+  left: 0;
+  right: 0;
+  background-color: rgba(205, 193, 214, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+  z-index: 999;
+}
+
+.mobile-nav-item a {
+  color: rgba(20, 12, 115, 0.96);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mobile-nav-item a:hover {
+  color: rgba(84, 76, 173, 0.96);
+}
+/* Contact Us Button in Mobile Menu */
+.contact-btn-mobile {
+  background-color: rgba(20, 12, 115, 0.96);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-btn-mobile:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header{
+    width: 100%;
+  }
+  .navbar-logo{
+    width:100%
+  }
+  .navbar-links {
+    display: none; /* Hide navbar links on smaller screens */
+  }
+  .school-subtitle {
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: flex; /* Show menu icon for mobile */
+  }
+
+  
+
+}
+@media (max-width: 320px) {
+  .header{
+    width: 200px;
+    height: 80px;
+    
+    
+  }
+  .navbar-logo {
+    width: 200px;
+    position: relative;
+    right: 30px;
+    height: 30px;
+
+}
+.school-name {
+  font-size: 1rem;
+  position: relative;
+  right: 20px;
+}
+.logo{
+  height: 70px;
+  margin-left: 0px;
+
+}
+
+}
+@media (max-width: 1024px) {
+  .header{
+    width: 100%;
+    height: 60px;
+  }
+  .navbar-links .navItem a {
+   width: 100%;
+  }
+  .navbar-links {
+    width:100%
+}
+.contact-btn {
+  padding: 0.2px 30px;
+  font-size: 0.85rem;
+}
+.navbar-links {
+  gap: 30px;
+  width:800px;
+  position: relative;
+  left: 50px;
+}
+}

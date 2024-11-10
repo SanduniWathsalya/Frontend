@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen:wght@600&family=Roboto:wght@400&display=swap');
+
+.hero2 {
+  background-color: rgba(212, 210, 246, 1);
+  padding: 140px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: -130px;
+  
+}
+
+.hero-content2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  width: 100%;
+  
+}
+
+.hero-text2 {
+  flex: 1;
+  text-align: left;
+  padding: 0 10px;
+  margin: 0; 
+}
+
+.hero-text2 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 55px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 80px;
+  right: 120px; 
+  white-space: nowrap; 
+}
+
+.hero-text2 p {
+  font-family: 'Kreon';
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 60px; 
+  right: 0; /* Set right to 0 to align properly */
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.hero-text2 button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: rgba(20, 12, 115, 0.96);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px; /* Use margin-top instead of bottom for proper positioning */
+  position: relative;
+  bottom: 50px;
+  left: 300px;
+  border-radius: 10px;
+  
+}
+
+.hero-image2 img {
+  position: relative;
+  top: 0; /* Remove unnecessary top positioning */
+  left: 0; /* Set left to 0 for proper alignment */
+  padding: 0 40px;
+  width: 550px;
+  height: 350px;
+}

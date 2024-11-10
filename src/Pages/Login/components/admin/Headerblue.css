@@ -1,0 +1,230 @@
+/* Header Container */
+.header2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(205, 193, 214, 0.308);
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  height: 70px;
+  padding: 0 20px;
+}
+
+/* Header on Scroll */
+.header2.scrolled {
+  background-color: rgba(216, 201, 229, 0.8);
+}
+
+/* School name and subtitle color changes on scroll */
+.header2.scrolled .school-name {
+  color: rgba(20, 12, 115, 0.96);
+}
+
+/* Navbar link styles */
+.navbar-links2 .navItem2 a {
+  text-decoration: none;
+  color: rgba(20, 12, 115, 0.96);
+  font-weight: bold;
+}
+
+.header2.scrolled .navbar-links2 .navItem2 a {
+  color: rgba(20, 12, 115, 0.96);
+}
+
+/* Hover color change */
+.header2.scrolled .navbar-links2 .navItem2 a:hover {
+  color: rgba(255, 255, 255, 0.96);
+}
+
+/* Logo and Navigation */
+.navbar-logo2 {
+  display: flex;
+  align-items: center;
+}
+
+.logo2 {
+  height: 90px;
+  margin-left: 10px;
+}
+
+/* School Name and Subtitle Styling */
+.school-name2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(20, 12, 115, 0.96);
+  margin-bottom: 8px;
+  position: relative;
+  right: 20px;
+}
+
+
+
+/* Active Link Styling */
+.active2 {
+  background-color: rgba(84, 76, 173, 0.96);
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+/* Navbar Links */
+.navbar-links2 {
+  display: flex;
+  gap: 50px;
+  position: relative;
+  left: 120px;
+}
+
+.navItem2 {
+  margin-right: 40px;
+}
+
+.navbar-contact2 {
+  display: flex;
+  align-items: center;
+}
+
+/* Contact Button Styling */
+.contact-btn2 {
+  background-color: rgba(20, 12, 115, 0.96);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  right: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-btn2:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+
+/* Hide menu icon by default */
+.menu-icon2 {
+  display: none;
+}
+
+
+
+ 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-links2,
+  .navbar-logo2,
+  .navbar-contact2 {
+    display: none; /* Hide on mobile */
+  }
+
+  .menu-icon2 {
+    display: flex;
+  }
+}
+@media (max-width: 320px) {
+  .header2 {
+  width: 320px;
+  height: 8vh;
+}
+/* Mobile Menu Icon */
+.menu-icon2 {
+  position: absolute;
+  top: 15px; /* Adjust to align vertically as needed */
+  right: 20px; /* Aligns icon to the right corner */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.75rem;
+  height: 1.15rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1100; /* Ensure it stays above other elements */
+}
+.close-icon {
+  font-size: 2rem;
+  color: rgba(20, 12, 115, 0.96);
+  cursor: pointer;
+}
+
+
+/* Menu bars */
+.bar2 {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(20, 12, 115, 0.96);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Transform bars into a close (X) icon */
+.menu-icon2 .bar2.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon2 .bar2.open:nth-child(2) {
+  opacity: 0; /* Hide middle bar */
+  
+ 
+}
+
+.menu-icon2 .bar2.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+/* Mobile Menu */
+.mobile-menu2 {
+  position: absolute;
+  top: 40px; /* Adjust to the height of your header */
+  left: 0;
+  right: 0;
+  background-color: rgba(205, 193, 214, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+  z-index: 999;
+}
+
+
+
+/* Contact Button in Mobile Menu */
+.contact-btn2-mobile {
+  background-color: rgba(20, 12, 115, 0.96);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-btn2-mobile:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+
+}
+/* Show menu icon on specific mobile screen sizes */
+@media (max-width: 425px) {
+  .menu-icon2 {
+    display: flex;
+  }
+
+  .navbar-links2 {
+    display: none; /* Hide navigation items on small screens */
+  }
+}
+
+/* For screens larger than 425px, display nav items normally */
+@media (min-width: 426px) {
+  .navbar-links2 {
+    display: flex; /* Display navigation items */
+  }
+}
+

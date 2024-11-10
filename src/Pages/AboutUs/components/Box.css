@@ -1,0 +1,19 @@
+.img {
+  padding: 40px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between; /* Aligns items to the left and right */
+  margin-top: 30px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats img {
+  width: 500px;
+  height: 350px;
+  margin-bottom: 10px;
+}

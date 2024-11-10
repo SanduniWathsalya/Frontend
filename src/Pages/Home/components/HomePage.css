@@ -1,0 +1,217 @@
+/* General Styles */
+.home-container {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px 0;
+  width: 100%;
+  
+  position: relative;
+  top: 2px;
+}
+
+.hero img {
+  width: 1400px; /* Use 100% to fit any screen size */
+  height: 100vh; /* Adjust height to be relative to the viewport */
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+/* Hero Section */
+.hero-text {
+  text-align: left;
+  font-weight: bolder;
+  position: absolute;
+  left: 10vw; /* Use viewport units for positioning */
+  top: 40vh;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  color: black;
+  font-weight: bolder; /* Use bolder instead of px for font-weight */
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Content Section */
+.content-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: rgba(205, 193, 214, 1); /* Background color */
+}
+
+.content-item {
+  text-align: left;
+  font-weight: bold;
+  color: rgba(22, 0, 65, 1);
+  padding: 20px;
+  position: relative;
+}
+
+.content-item img {
+  width: 100%;
+  height: 250px; /* Reduce fixed height for better fit */
+  object-fit: cover;
+}
+
+.content-item:hover img {
+  transform: scale(1.05); /* Slightly smaller zoom for a better experience */
+}
+
+.content-item:hover {
+  transform: scale(1.05); 
+}
+
+.aboutus-link {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.aboutus-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1040px) {
+  .hero img {
+    height: 40vh; /* Adjust image height */
+  }
+
+  .hero-text {
+    top: 15vh; /* Adjust text positioning */
+    left: 8vw;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem; /* Adjust for better fit on smaller screens */
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .content-section {
+    padding: 15px; /* Adjust padding for smaller width */
+  }
+
+  .content-item:hover img {
+    transform: scale(1.05); /* Slightly smaller zoom for a better experience */
+  }
+  
+  .content-item:hover {
+    transform: scale(1.05); 
+  }
+  
+
+  .content-item img {
+    height: 220px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .hero-text {
+    top: 12vh;
+    left: 5vw;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .content-section {
+    width: 100%;
+  }
+
+  .content-item img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+    .home-container {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px 2px;
+    width:100%;
+    
+
+  }
+  
+  .hero img {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .hero-text {
+    top: 20vh;
+    left: 5vw;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.7rem;
+  }
+
+  .content-section {
+    padding: 10px;
+  }
+
+  .content-item img {
+    height: 200px;
+  }
+}
+@media(max-width:1024px){
+  .home-container{
+    width: 100%;
+  }
+  .hero img {
+    height: 120vh;
+    width: 100%;
+  }
+  .hero-text {
+    top: 50vh;
+    left: 12vw;
+    
+  }
+}
+@media (max-width: 320px) {
+  .home-container{
+    width: 100%;
+  }
+  .hero img {
+    height: 40vh;
+    width: 100%;
+  }
+  .hero-text {
+    top: 18vh;
+    left: 12vw;
+    
+    
+  }
+  .hero-text h1 {
+    font-size: 1.25rem;
+  }
+}

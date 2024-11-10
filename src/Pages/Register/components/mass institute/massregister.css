@@ -1,0 +1,89 @@
+.MIlogin{
+  display: flex;
+  height: 650px;
+  background-color: hwb(253 47% 5%);
+  
+  
+  
+}
+
+.MImainContent {
+  max-width: 780px; /* Set a max-width for larger screens */
+  height: 480px;
+  margin: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 42px;
+}
+
+
+.MIcontentWrapper {
+  display: flex;
+  width: 780px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.MIImage {
+  width: 50%;
+  height: 480px;
+  background-image: url('../../../../../public/image_a4413c64dd.jpg'); /* Update with correct path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  bottom: 8px;
+  
+}
+
+
+.MIFormSection {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.MIinputGroup {
+  margin-bottom: 15px;
+}
+
+.MIinputLabel {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.MIinputField {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+
+
+.MIRegisterButton{
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(20, 12, 115, 1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.MIRegisterButton:hover {
+  background-color: #5a52e0;
+}
+

@@ -1,0 +1,117 @@
+.teacherlogin{
+  display: flex;
+  height: 650px;
+  background-color: hwb(253 47% 5%);
+  
+  
+  
+}
+
+.mainContent3 {
+  max-width: 780px; /* Set a max-width for larger screens */
+  height: 480px;
+  margin: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 42px;
+}
+
+
+.contentWrapper3 {
+  display: flex;
+  width: 780px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.loginImage3 {
+  width: 50%;
+  height: 480px;
+  background-image: url('/public/teacherform.jpg'); /* Update with correct path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 10px 10px 0;
+  filter: blur(0px);
+}
+
+
+.loginFormSection3 {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.inputGroup3 {
+  margin-bottom: 15px;
+}
+
+.inputLabel3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.inputField3 {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+.rememberMe3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.checkbox3 {
+  width: 20px;
+  height: 20px;
+}
+
+.checkboxLabel3 {
+  font-size: 14px;
+  color: #555;
+}
+
+.signInButton3 {
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(20, 12, 115, 1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.signInButton3:hover {
+  background-color: #5a52e0;
+}
+
+.signupPrompt3 {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #555;
+  text-align: center;
+}
+
+.signupLink3 {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.signupLink3:hover {
+  text-decoration: underline;
+}

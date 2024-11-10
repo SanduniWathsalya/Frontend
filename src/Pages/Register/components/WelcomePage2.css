@@ -1,0 +1,57 @@
+.content2 {
+    padding: 70px 20px;
+    width: 100%;
+    background-color:rgba(212, 210, 246, 1);
+}
+  
+  .content2 h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 40px;
+    color: rgba(20, 12, 115, 1);
+  }
+  
+  .content2 h2 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
+  .register-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  .register-card {
+    text-align: center;
+    width: 300px;
+  }
+  
+  .register-card img {
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+  }
+  
+  .register-card  h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  
+  .register-card button {
+    background-color: #3e0a84;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+.register-card button:hover {
+    transform: scale(1.15); /* Increase scale for the pop-up effect */
+    opacity: 0.65; /* Reduce opacity slightly for a smoother hover effect */
+}

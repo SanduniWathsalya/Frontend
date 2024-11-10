@@ -1,0 +1,68 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d8c9e5; /* Replace with your preferred background color */
+  padding: 10px 20px;
+  width: 100%;
+  position:fixed;
+  z-index: 1000; 
+  transition: background-color 0.3s ease;
+  
+}
+
+.header.scrolled {
+  background-color: rgba(216, 201, 229, 0.8);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Adjust to your desired size */
+  margin-right: 10px;
+}
+
+.school-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(20, 12, 115, 0.96);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: rgba(20, 12, 115, 0.96); /* Replace with your preferred link color */
+  font-weight: bold;
+}
+
+.navbar-contact {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-btn {
+  background-color: rgba(20, 12, 115, 0.96); /* Replace with your preferred button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  opacity: 0.8;
+}
+
+.contact-number {
+  color: #000;
+  font-size: 1rem;
+}

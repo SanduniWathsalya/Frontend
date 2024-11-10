@@ -1,0 +1,47 @@
+.vision {
+  padding: 0px;
+}
+
+.vision h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.vision-statement {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #333;
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.vision-statement::before {
+  content: "“"; /* Opening large quotation mark */
+  font-size: 80px;
+  font-weight: bold;
+  color: rgb(0, 0, 0); 
+  position: absolute;
+  left: 10px;
+  top: -20px;
+}
+
+.vision-statement::after {
+  content: "”"; /* Closing large quotation mark */
+  font-size: 80px;
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* Match your brand color */
+  position: absolute;
+  right: 10px;
+  top: -20px;
+}
+
+
+.vision img {
+  width: 1350px;
+  height: 400px;
+ 
+}

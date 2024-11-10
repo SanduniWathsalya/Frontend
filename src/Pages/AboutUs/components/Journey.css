@@ -1,0 +1,33 @@
+.journey {
+  padding: 40px;
+  background-color: rgba(212, 210, 246, 1);
+  text-align: center;
+  
+}
+
+.journey h2 {
+  font-size: 32px;
+}
+
+.journey p {
+  font-size: 18px;
+  width: 100%; 
+  margin: 20px 0; 
+  padding: 0 20px; .journey {
+  padding: 40px;
+  background-color: rgba(212, 210, 246, 1);
+  text-align: center;
+}
+
+.journey h2 {
+  font-size: 32px;
+}
+
+.journey p {
+  font-size: 18px;
+  width: 100%; 
+  margin: 20px 0; 
+  padding: 0 20px;
+}
+
+}

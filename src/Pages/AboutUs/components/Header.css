@@ -1,0 +1,92 @@
+.header2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(205, 193, 214, 1);
+    width: 1340px;
+    position:fixed;
+    z-index: 1000; 
+    height: 70px;
+  }
+  
+  
+  
+  .navbar-logo2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo2 {
+    height: 90px; /* Adjust to your desired size */
+    margin-left: 10px;
+  }
+  
+  .school-name2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:  rgba(20, 12, 115, 0.96);
+    margin-bottom: 8px;
+    position: relative;
+    right: 20px;
+  }
+  
+  .school-subtitle2 {
+    font-size: 0.8rem;
+    font-weight: normal;
+    letter-spacing: 0.3em; /* Add spacing between letters */
+    color:  rgba(84, 76, 173, 0.96);  /* Match the color with the image */
+    margin-top: 50px; /* Adjust this value to move it closer to BRILLIENTSTAR */
+    position: relative;
+    right:165px;
+  }
+  .navbar-links2 {
+    display: flex;
+    gap: 50px; /* Adjust this value to increase the space between navigation items */
+    position: relative;
+    left: 120px;
+  }
+  
+  .navItem2 {
+    margin-right: 40px; /* Additional spacing between items if needed */
+  }
+  
+  .navbar-links .navItem2 a{
+    text-decoration: none;
+    color: rgba(20, 12, 115, 0.96);  /* Default link color */
+    font-weight: bold;
+   
+   
+  }
+  
+  /* Change color of individual link on hover */
+  .navbar-links .navItem2 a:hover {
+    color: rgba(138, 131, 211, 0.96);/* Change to your preferred hover color */
+   
+  }
+  
+  
+  
+  .navbar-contact2 {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .contact-btn2 {
+    background-color: rgba(20, 12, 115, 0.96); /* Replace with your preferred button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    right: 30px;
+  }
+  
+  .contact-btn2:hover {
+    opacity: 0.8;
+  }
+  
+  
+  

@@ -1,0 +1,17 @@
+.choose-us {
+  padding: 40px;
+  background-color:rgba(212, 210, 246, 1);
+}
+
+.choose-us h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.choose-us p {
+  font-size: 18px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+

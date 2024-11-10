@@ -1,0 +1,13 @@
+/* ./src/App.css */
+.app {
+  display: flex;
+  height: 135vh;
+ 
+}
+
+@media (max-width:480px) {
+  .app {
+  height: 180vh;
+  width: 100%;
+}
+}

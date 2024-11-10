@@ -1,0 +1,15 @@
+.team {
+  padding: 40px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 32px;
+}
+
+.team p {
+  font-size: 18px;
+  width: 100%;
+  margin: 20px auto;
+}
+

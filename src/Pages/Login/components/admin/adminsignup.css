@@ -1,0 +1,89 @@
+.adminsignup{
+  display: flex;
+  height: 600px;
+  background-color: hwb(253 47% 5%);
+  
+  
+  
+}
+
+.mainContent4 {
+  max-width: 780px; /* Set a max-width for larger screens */
+  height: 480px;
+  margin: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 35px;
+}
+
+
+.contentWrapper4 {
+  display: flex;
+  width: 780px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.signupimage {
+  width: 50%;
+  height: 350px;
+  background-image: url('/public/signup4.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 10px 10px 0;
+  
+}
+
+.loginFormSection4 {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputGroup4 {
+  margin-bottom: 5px;
+}
+
+.nameinputLabel {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.nameinputField {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+.signupButton {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(20, 12, 115, 1);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.signupButton:hover {
+  background-color: #5a52e0;
+ 
+}
+
+.text-danger {
+  color: red;
+  font-size: 14px; /* Optional, adjust the size as needed */
+  margin-top: 5px; /* Optional, to create some space between the input field and the error */
+}

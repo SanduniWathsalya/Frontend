@@ -1,0 +1,158 @@
+/* ./src/components/Dashboard.css */
+
+.dashboard {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  margin: 50px auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 1rem); /* 3 cards per row with space */
+  max-width: 350px;
+  background-color: #d1b3e3;
+  text-align: left;
+  padding: 1rem;
+  height: 100px;
+  margin: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #c79fd0;
+}
+
+.card-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.icon3 {
+  width: 58px;
+  height: 58px;
+  position: relative;
+  bottom: 8px;
+  margin-right: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card-title4 {
+  font-size: 1rem;
+  text-align: right;
+  position: relative;
+  left: 30px;
+  top: 10px;
+}
+
+.count, .count3 {
+  font-size: 1.2rem;
+  margin-top: 4px;
+  position: relative;
+  right: 50px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.chart, .chart2 {
+  background-color: #f4e1fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.chart h2, .chart2 h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.chart2 img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  background-color: #f4e1fa;
+  padding: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; /* Stack cards on smaller screens */
+    max-width: none;
+  }
+
+  .dashboard {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    font-size: 0.9rem; /* Adjust card font size for small screens */
+    padding: 0.75rem;
+  }
+
+  .chart h2, .chart2 h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width:320px){
+  .chart, .chart2 {
+    width: 30px;
+  }
+  .charts {
+   width: auto;
+   align-items: center;
+   
+  }
+  .dashboard {
+    width: 100%;
+  
+}
+}
