@@ -1,11 +1,14 @@
 .choose-us {
   padding: 40px;
   background-color:rgba(212, 210, 246, 1);
+  width: 100%;
 }
 
 .choose-us h2 {
-  font-size: 32px;
-  text-align: center;
+  font-size:36px;
+    text-align: center;
+    font-weight: bold;
+
 }
 
 .choose-us p {

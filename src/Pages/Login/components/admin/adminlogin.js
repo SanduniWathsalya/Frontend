@@ -1,11 +1,14 @@
 import React from 'react';
 import './adminlogin.css';
 import LoginForm2 from './LoginFormAdmin';
+import Header from '../../../Home/components/Header'
 
 
 function AdminLogin() {
   return (
+    
     <div className="adminlogin">
+      <Header/>
       <main className="mainContent2">
         <div className="contentWrapper2">
           <LoginForm2 />

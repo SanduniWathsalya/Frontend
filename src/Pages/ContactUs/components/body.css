@@ -1,0 +1,254 @@
+.mainCont {
+    display: flex; /* Arrange children in a row */
+    justify-content: space-between; /* Add space between form and details */
+    align-items: flex-start; /* Align items at the top */
+    gap: 50px; /* Add spacing between the two sections */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 20px;
+  }
+
+  .bodyForm {
+    width: 500px; /* Optional: Set a max width for form */
+    background-color: #D4D2F6;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 60px;
+    height: 550px;
+  }
+
+.bodyForm h2 {
+    text-align: left;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bodyForm p {
+    color:  red;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+
+.form-body {
+    margin-bottom: 10px;
+    
+
+}
+
+.form-body label {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    text-align: left;
+
+}
+
+.form-body input, .form-body textarea {
+    width: 82%; /* Full width for better flexibility on all screen sizes */
+    padding: 10px; 
+    margin: 5px 0;
+    background-color: #F4F2FF;
+    border: 1px solid #fffefe;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-body textarea {
+    height: 80px; /* Set height for text areas */
+}
+
+.form-button input {
+    padding: 10px 20px;
+    background-color: #140C73;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 88%; /* Full width on smaller screens */
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-button input:hover {
+    background-color: #370398fe;
+}
+
+.line {
+    flex: 1 1 100%;
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-left: 0%;
+    width: 88%; /* Adjusted to 100% for flexibility */
+    border-top: 2px solid #140C73;
+}
+
+.details p {
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    color: #050505;
+    padding-top: 0px;
+    padding-right: 37px;
+    margin-bottom: 15%;
+}
+
+.details p svg {
+    padding-bottom: 0%;
+    margin-right: 40px;
+    color: #413BA4;
+    font-size: 18px;
+}
+
+.map {
+    max-width: 100%;
+    margin: 3.5% auto 3%; /* Centering map on smaller screens */
+}
+
+.map iframe {
+   width:730px ; /* Full width on all screens */
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    height: 450px;
+    
+    
+}
+
+.contactDetails {
+    flex: 2; /* Allow details to take up available space */
+    width: 500px; /* Optional: Set a max width for details */
+   
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 60px;
+  }
+  
+  
+  
+  .detailsRow {
+    display: flex; /* Arrange items in a row */
+    flex-wrap: nowrap; /* Wrap items if space is insufficient */
+    gap: 20px; /* Add spacing between items */
+    align-items: center; /* Align items vertically */
+    background-color:#D4D2F6;
+    width: 730px; /* Optional: Set a max width for details */
+   height: 50px;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  
+.detailsRow p {
+    margin: 0;
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    color: #050505;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .detailsRow p svg {
+    color: #413BA4;
+    font-size: 18px;
+  }
+  
+  
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .bodyForm {
+        width: 400px; /* Adjust form width for tablets */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contactDetails {
+        flex: 2; /* Allow details to take up available space */
+
+       
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 60px;
+      }
+      
+      .detailsRow {
+        display: flex; /* Arrange items in a row */
+        flex-wrap: nowrap; /* Wrap items if space is insufficient */
+        gap: 10px; /* Add spacing between items */
+        align-items: center; /* Align items vertically */
+        background-color:#D4D2F6;
+        width: 530px; /* Optional: Set a max width for details */
+       height: 50px;
+        padding: 8px;
+        border-radius: 5px;
+        font-size: small;
+      }
+
+      .map iframe {
+        width:530px ; /* Full width on all screens */
+         height: 350px;
+      
+        
+
+        
+        
+         
+     }
+      
+
+    .line {
+        width: 90%; /* Shrinking line width on medium-sized screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .bodyForm {
+        width: 100%; /* Full width for small devices */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .mainCont {
+        flex-direction: column; /* Stack the elements on small screens */
+    }
+
+    .line {
+        width: 100%; /* Full width line on small screens */
+    }
+
+    
+    .map iframe {
+        width:280px ; /* Full width on all screens */
+         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+         border-radius: 0px;
+         height: 350px;
+         position: relative;
+         bottom: 50px;
+         right: 20px;
+         margin: 10px;
+         margin-bottom: 10px;
+         
+     }
+    .detailsRow {
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Add spacing between each item */
+        align-items: flex-start; /* Align items to the left */
+        background-color: #D4D2F6;
+        width: 280px; /* Optional: Set a max width for details */
+        height: auto; /* Let the height adjust to content */
+        padding: 18px;
+        position: relative;
+       bottom: 80px;
+       right: 10px;
+      }
+      .detailsRow p{
+        text-align: center;
+        
+      }
+    }    

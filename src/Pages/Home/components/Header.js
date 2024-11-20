@@ -55,10 +55,10 @@ function Header() {
         ))}
       </div>
 
-      <div className="menu-icon2" onClick={toggleMobileMenu}>
-        <div className={`bar2 ${isMobileMenuOpen ? 'open' : ''}`}></div>
-        <div className={`bar2 ${isMobileMenuOpen ? 'open' : ''}`}></div>
-        <div className={`bar2 ${isMobileMenuOpen ? 'open' : ''}`}></div>
+      <div className="menu-icon" onClick={toggleMobileMenu}>
+        <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>
       </div>
 
       {isMobileMenuOpen && (

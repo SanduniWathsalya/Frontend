@@ -4,49 +4,50 @@
   background-color: rgba(212, 210, 246, 1);
   padding: 140px 20px;
   display: flex;
+  flex-direction: column; /* Stack content for better responsiveness */
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: -130px;
+  height: 700px;
   
 }
 
+
 .hero-content2 {
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
   align-items: center;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 10px 20px;
   width: 100%;
-  
 }
 
 .hero-text2 {
   flex: 1;
-  text-align: left;
+  text-align: center; /* Default to center for better mobile alignment */
   padding: 0 10px;
-  margin: 0; 
+  margin: 0;
 }
 
 .hero-text2 h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 55px;
+  font-size: 50px; /* Adjust font size for better compatibility */
+  white-space: nowrap; /* Prevent wrapping */
   font-weight: bolder;
   text-transform: uppercase;
   position: relative;
-  bottom: 80px;
-  right: 120px; 
-  white-space: nowrap; 
+  bottom: 30px;
+ left: 20px;
+  white-space: normal; /* Allow wrapping for smaller screens */
+  margin-bottom: 20px; /* Add margin for spacing */
 }
 
 .hero-text2 p {
   font-family: 'Kreon';
-  font-size: 50px;
+  font-size: 50px; /* Adjust font size */
   margin-bottom: 20px;
   text-align: center;
-  position: relative;
-  bottom: 60px; 
-  right: 0; /* Set right to 0 to align properly */
-  letter-spacing: 2px;
+  letter-spacing: 1px; /* Reduced for better readability */
   line-height: 1.5;
   text-transform: uppercase;
 }
@@ -59,19 +60,57 @@
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  margin-top: 20px; /* Use margin-top instead of bottom for proper positioning */
+  margin-top: 20px;
   position: relative;
-  bottom: 50px;
-  left: 300px;
   border-radius: 10px;
-  
 }
 
 .hero-image2 img {
-  position: relative;
-  top: 0; /* Remove unnecessary top positioning */
-  left: 0; /* Set left to 0 for proper alignment */
-  padding: 0 40px;
-  width: 550px;
-  height: 350px;
+  width: 100%; /* Ensure it adapts to container */
+  max-width: 550px; /* Limit width on larger screens */
+  height: 400px; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add spacing on small screens */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-content2 {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-text2 h1 {
+    font-size: 30px; /* Smaller font for mobile */
+  }
+
+  .hero-text2 p {
+    font-size: 18px;
+  }
+
+  .hero-text2 button {
+    left: 0; /* Center the button */
+  }
+
+  .hero-image2 img {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero2 {
+    padding: 100px 10px; /* Adjust padding */
+  }
+
+  .hero-text2 h1 {
+    font-size: 24px;
+  }
+
+  .hero-text2 p {
+    font-size: 16px;
+  }
+
+  .hero-text2 button {
+    padding: 8px 15px; /* Smaller button for compact view */
+  }
 }

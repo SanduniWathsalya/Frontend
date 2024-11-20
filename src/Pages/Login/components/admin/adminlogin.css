@@ -1,26 +1,27 @@
 .adminlogin{
   display: flex;
-  height: 680px;
+  height: 100vh;
   background-color: hwb(253 47% 5%);
-  
-  
-  
+  justify-content: center;
 }
 
 .mainContent2 {
-  max-width: 780px; /* Set a max-width for larger screens */
+  width: 780px; /* Set a max-width for larger screens */
   height: 530px;
   margin: auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   border-radius: 10px;
   margin-bottom: 42px;
+  display: flex;
+  flex-direction: column;
 }
 
 
 .contentWrapper2 {
   display: flex;
-  width: 780px;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   
@@ -32,8 +33,9 @@
   background-image: url('/public/adminform.jpg');
   background-size: cover;
   background-position: center;
-  border-radius: 0 10px 10px 0;
-  margin-bottom: 12px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+  
   
 }
 
@@ -43,6 +45,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.loginFormSection2 h2{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgba(20, 12, 115, 0.96);
+  position: relative;
+  bottom: 50px;
 }
 
 .inputGroup2 {
@@ -99,7 +108,7 @@
   background-color: #5a52e0;
 }
 
-.createButton{
+.createButton2{
   width: 100%;
   padding: 10px;
   background-color: rgb(25, 9, 207);
@@ -112,7 +121,7 @@
   transition: background-color 0.3s ease;
 }
 
-.createButton:hover {
+.createButton2:hover {
   background-color: #5a52e0;
 }
 
@@ -138,4 +147,39 @@
   color: red;
   font-size: 14px; /* Optional, adjust the size as needed */
   margin-top: 5px; /* Optional, to create some space between the input field and the error */
+}
+@media (max-width: 768px) {
+  .contentWrapper2{
+    position: relative;
+    top: 120px;
+    
+  }
+  .adminlogin{
+    height: 800px;
+  }
+
+  .loginImage2 {
+    width: 100%;
+    height: 200px; /* Adjust height for smaller screens */
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    bottom: 542px;
+  }
+
+  .loginFormSection2 {
+    width: 100%;
+    position: relative;
+    top: 120px;
+    
+    
+  }
+
+  .mainContent2 {
+    height: 630px;
+    position: relative;
+    bottom: 58px; /* Allow flexible height on smaller screens */
+    width:300px
+  
+  }
+
 }

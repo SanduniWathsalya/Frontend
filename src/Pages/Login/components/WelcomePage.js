@@ -1,14 +1,33 @@
 // Main.js
-import React from 'react';
+import React,{useRef} from 'react';
 import './WelcomePage.css';
 import { Link } from 'react-router-dom';
 
 const WelcomePage = () => {
+  const scrollRef=useRef(null);
+
+  const scrollleft=() => {
+    scrollRef.current.scrollBy({
+      left:-300, // Adjust scroll distance as needed
+      behavior:'smooth',
+    });
+  };
+
+  const scrollright=() => {
+    scrollRef.current.scrollBy({
+      left:300, // Adjust scroll distance as needed
+      behavior:'smooth',
+    });
+  };
+
+  
   return (
     <section className="content">
-      <h1>WELCOME TO ABC SCHOOL</h1>
+      <h1>WELCOME TO BRILLIENTSTAR</h1>
       <h2>Are you,</h2>
-      <div className="login-options">
+      <div className="card-section">
+      <button className="scroll-btn left" onClick={scrollleft}>‹</button>
+      <div className="login-options" ref={scrollRef}>
         <div className="login-card">
           <img src='studentlogin.jpg' alt="Student" />
           <h3>STUDENT</h3>
@@ -30,6 +49,8 @@ const WelcomePage = () => {
           <button>LOGIN</button>
           </Link>
         </div>
+      </div>
+      <button className="scroll-btn right" onClick={scrollright}>›</button>
       </div>
     </section>
   );

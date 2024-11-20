@@ -45,6 +45,14 @@
   justify-content: center;
 }
 
+.loginFormSection h2{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgba(20, 12, 115, 0.96);
+  position: relative;
+  bottom: 50px;
+
+}
 
 
 .inputGroup {

@@ -1,28 +1,27 @@
-/* Sidebar container */
 .sidebar {
-  width: 100%; /* Full width on small screens */
-  max-width: 250px; /* Limit width for larger screens */
+  width: 20%;
   background-color: #e6e6fa;
-  height: auto;
+  height: 135vh;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  
+  
 }
 
-/* Profile Section */
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
   margin-top: 80px;
+ 
 }
 
 .avatar {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   background-color: #ccc;
   border-radius: 50%;
   margin-bottom: 1rem;
@@ -30,71 +29,28 @@
 }
 
 .avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /* Make the image take the full width of the avatar */
+  height: 100%; /* Make the image take the full height of the avatar */
+  object-fit: cover; /* This will ensure the image maintains its aspect ratio and covers the avatar area */
 }
 
 .name {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  text-align: center;
 }
 
 .role {
   color: #666;
-  font-size: 0.9rem;
-  text-align: center;
 }
 
 .menu h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-top: 1rem;
-  text-align: center;
 }
 
 .menu p {
   margin: 0.5rem 0;
   color: #333;
   cursor: pointer;
-  text-align: center;
-  transition: color 0.3s ease;
-}
-
-.menu p:hover {
-  color: #555;
-}
-
-/* Responsive Adjustments */
-@media (min-width: 768px) {
-  .sidebar {
-    position: fixed; /* Fix sidebar on larger screens */
-    height: 100vh; /* Full viewport height */
-  }
-}
-
-@media (max-width: 480px) {
-  .name {
-    font-size: 0.9rem;
-  }
-
-  .role {
-    font-size: 0.8rem;
-  }
-
-  .menu h4 {
-    font-size: 0.9rem;
-  }
-
-  .menu p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .sidebar {
-   margin-top: 70px;
-   height: 160vh;
-  }
-}
+}  

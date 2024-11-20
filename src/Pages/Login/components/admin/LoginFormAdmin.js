@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './adminlogin.css';
 
 function LoginForm() {
@@ -8,89 +8,91 @@ function LoginForm() {
     password: '',
   });
 
-  const [errors, setErrors] = useState({
-    email: '',
-    password: '',
-  });
-
-  const navigate = useNavigate(); // Navigation for after sign-in
+  const [errors, setErrors] = useState({});
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
-    const { email, value } = e.target;
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [email]: value,
+      [name]: value,
     });
   };
 
   const validateForm = () => {
     const newErrors = {};
-
-    // ID validation
     if (!formData.email) {
-      newErrors.email = 'ID is required';
+      newErrors.email = 'Email is required';
     }
-
-    // Password validation
     if (!formData.password) {
       newErrors.password = 'Password is required';
     } else if (formData.password.length < 8) {
-      newErrors.password = 'Password must be at least 8 characters long';
+      newErrors.password = 'Password must be at least 8 characters';
     }
-
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0; // Return true if no errors
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      // Perform API call for login
-      fetch('http://localhost:5000/api/login', {
+      fetch('http://localhost:5000/api/LoginFormAdmin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       })
-        .then(response => response.json())
-        .then(data => {
+        .then((response) => response.json())
+        .then((data) => {
           if (data.success) {
-            // Redirect to the admin dashboard after successful login
-            navigate('/admindashboard'); // Update this path to match your route for the Admin Dashboard
+            navigate('/admindashboard'); // Redirect to admin dashboard
           } else {
-            // Set an error if login fails
-            setErrors({ ...errors, password: 'Invalid Email or Password' });
+            setErrors({ general: data.message });
           }
         })
-        .catch(error => {
+        .catch((error) => {
           console.error('Error during login:', error);
-          setErrors({ ...errors, password: 'Login failed. Please try again.' });
+          setErrors({ general: 'Login failed. Please try again.' });
         });
     }
   };
 
   return (
-    <section className= "loginFormSection">
-      <h2>ADMIN LOGIN</h2>
-
-      <form className="loginForm">
-        <div className="inputGroup">
-        <label htmlFor="studentId" className="inputLabel">Student Id</label>
-        <input type="text" id="studentId" className="inputField" />
+    <section className="loginFormSection2">
+      <h2>Admin Login</h2>
+      <form className="loginForm2" onSubmit={handleSubmit}>
+        <div className="inputGroup2">
+          <label htmlFor="email" className="inputLabel2">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="inputField2"
+          />
+          {errors.email && <p className="error">{errors.email}</p>}
         </div>
-        <div className="inputGroup">
-          <label htmlFor="password" className="inputLabel">Password</label>
-          <input type="password" id="password" className="inputField" />
+        <div className="inputGroup2">
+          <label htmlFor="password" className="inputLabel2">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+            className="inputField2"
+          />
+          {errors.password && <p className="error">{errors.password}</p>}
         </div>
-        <div className="rememberMe">
-          <input type="checkbox" id="rememberMe" className="checkbox" />
-          <label htmlFor="rememberMe" className="checkboxLabel">REMEMBER ME</label>
+        <div className="rememberMe2">
+          <input type="checkbox" id="rememberMe" className="checkbox2" />
+          <label htmlFor="rememberMe" className="checkboxLabel2">Remember Me</label>
         </div>
-        
-    
-        <Link to="/admindashboard">
-            <button  type="submit" className="signInButton">LOGIN</button>
-          </Link>
-        
+        <button type="submit" className="signInButton2">Login</button>
+        {errors.general && <p className="error">{errors.general}</p>}
+        <p className="signupPrompt2">
+          Don't have an account? <a href="/adminsignup" className="signupLink2">Sign up now</a>
+        </p>
       </form>
     </section>
   );

@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <div className="home-container">
        <div className="hero">
-     <img src="c1b10ae0801aa8e415bea928a0ab0431.jpg" alt="Students Learning" ></img>
+     <img src="Homepage.jpg" alt="Students Learning" ></img>
      </div>
       {/* Hero Section */}
       <div className="hero-text">

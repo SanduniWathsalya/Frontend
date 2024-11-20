@@ -2,11 +2,15 @@
   padding: 40px;
   background-color: rgba(212, 210, 246, 1);
   text-align: center;
+  width: 100%;
   
 }
 
 .journey h2 {
-  font-size: 32px;
+    font-size:36px;
+    text-align: center;
+    font-weight: bold;
+
 }
 
 .journey p {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import Header from '../Home/components/Header';
+import Header2 from '../Login/components/admin/Headerblue';
 import Hero from './components/Hero';
 import About from './components/About';
 import Vision from './components/Vision';
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
      
-      <Header/>
+      <Header2/>
       <Hero />
       <About />
       <Vision />

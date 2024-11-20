@@ -13,7 +13,8 @@ function Header2() {
     <Link to="/" onClick={toggleMobileMenu} className="nav-link">Home</Link>,
     <NavLink to="/About" onClick={toggleMobileMenu} className="nav-link">About Us</NavLink>,
     <NavLink to="/Login" onClick={toggleMobileMenu} className="nav-link">Login</NavLink>,
-    <NavLink to="/Register" onClick={toggleMobileMenu} className="nav-link">Register</NavLink>
+    <NavLink to="/Register" onClick={toggleMobileMenu} className="nav-link">Register</NavLink>,
+    <NavLink to="/ContactUs" onClick={toggleMobileMenu} className="nav-link">Contact Us</NavLink>
   ];
 
   useEffect(() => {
@@ -40,13 +41,13 @@ function Header2() {
       <div className="navbar-logo2">
         <img src="starlogo-removebg-preview.png" alt="ABC School Logo" className="logo2" />
         <h1 className="school-name2">BRILLIENTSTAR</h1>
-        <h2 className="school-subtitle2">S C H O O L S</h2>
+        
       </div>
 
       
-      <div className="navbar-links">
+      <div className="navbar-links2">
         {navigationItems.map((item, index) => (
-          <div key={index} className="navItem">
+          <div key={index} className="navItem2">
             {item}
           </div>
         ))}
@@ -61,13 +62,11 @@ function Header2() {
       {isMobileMenuOpen && (
         <div className="mobile-menu2">
           {navigationItems.map((item, index) => (
-            <div key={index} className="mobile-nav-item">
+            <div key={index} className="mobile-nav-item2">
               {item}
             </div>
           ))}
-          <button className="contact-btn2-mobile" onClick={() => setIsMobileMenuOpen(false)}>
-            Contact Us
-          </button>
+          
         </div>
       )}
     </header>

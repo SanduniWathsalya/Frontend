@@ -8,8 +8,8 @@
   position: fixed;
   z-index: 1000;
   transition: background-color 0.3s ease;
-  height: 70px;
-  padding: 0 20px;
+  height: 60px;
+  padding: 0 20px; /* Add padding for spacing */
 }
 
 /* Header on Scroll */
@@ -28,6 +28,9 @@
   color: rgba(20, 12, 115, 0.96);
   font-weight: bold;
 }
+.navbar-links2 .navItem2 a:hover {
+  color:rgba(255, 255, 255, 0.96);
+}
 
 .header2.scrolled .navbar-links2 .navItem2 a {
   color: rgba(20, 12, 115, 0.96);
@@ -42,11 +45,13 @@
 .navbar-logo2 {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .logo2 {
   height: 90px;
-  margin-left: 10px;
+  position:relative;
+  right: 10px;
 }
 
 /* School Name and Subtitle Styling */
@@ -56,7 +61,7 @@
   color: rgba(20, 12, 115, 0.96);
   margin-bottom: 8px;
   position: relative;
-  right: 20px;
+  right: 30px;
 }
 
 
@@ -71,70 +76,23 @@
 /* Navbar Links */
 .navbar-links2 {
   display: flex;
-  gap: 50px;
+  gap: 20px;
+  flex-wrap: nowrap; 
   position: relative;
-  left: 120px;
+  left: 2px;
 }
 
 .navItem2 {
   margin-right: 40px;
-}
-
-.navbar-contact2 {
-  display: flex;
-  align-items: center;
-}
-
-/* Contact Button Styling */
-.contact-btn2 {
-  background-color: rgba(20, 12, 115, 0.96);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-weight: bold;
-  position: relative;
-  right: 30px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.contact-btn2:hover {
-  transform: scale(1.15);
-  opacity: 0.85;
+  white-space: nowrap;
 }
 
 /* Hide menu icon by default */
 .menu-icon2 {
-  display: none;
-}
-
-
-
- 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .navbar-links2,
-  .navbar-logo2,
-  .navbar-contact2 {
-    display: none; /* Hide on mobile */
-  }
-
-  .menu-icon2 {
-    display: flex;
-  }
-}
-@media (max-width: 320px) {
-  .header2 {
-  width: 320px;
-  height: 8vh;
-}
-/* Mobile Menu Icon */
-.menu-icon2 {
   position: absolute;
   top: 15px; /* Adjust to align vertically as needed */
   right: 20px; /* Aligns icon to the right corner */
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 1.75rem;
@@ -143,13 +101,12 @@
   transition: transform 0.3s ease;
   z-index: 1100; /* Ensure it stays above other elements */
 }
+
 .close-icon {
   font-size: 2rem;
   color: rgba(20, 12, 115, 0.96);
   cursor: pointer;
 }
-
-
 /* Menu bars */
 .bar2 {
   width: 100%;
@@ -157,7 +114,6 @@
   background-color: rgba(20, 12, 115, 0.96);
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
 /* Transform bars into a close (X) icon */
 .menu-icon2 .bar2.open:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
@@ -165,19 +121,16 @@
 
 .menu-icon2 .bar2.open:nth-child(2) {
   opacity: 0; /* Hide middle bar */
-  
- 
 }
 
-.menu-icon2 .bar2.open:nth-child(3) {
+.menu-icon2.bar2.open:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
+  
 }
-
-
 /* Mobile Menu */
 .mobile-menu2 {
   position: absolute;
-  top: 40px; /* Adjust to the height of your header */
+  top: 2px; /* Adjust to the height of your header */
   left: 0;
   right: 0;
   background-color: rgba(205, 193, 214, 0.95);
@@ -189,42 +142,77 @@
   z-index: 999;
 }
 
-
-
-/* Contact Button in Mobile Menu */
-.contact-btn2-mobile {
-  background-color: rgba(20, 12, 115, 0.96);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
+.mobile-nav-item2 a {
+  color: rgba(20, 12, 115, 0.96);
   font-weight: bold;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  text-decoration: none;
 }
 
-.contact-btn2-mobile:hover {
-  transform: scale(1.1);
-  opacity: 0.85;
+.mobile-nav-item2 a:hover {
+  color: rgba(84, 76, 173, 0.96);
 }
 
 
-}
-/* Show menu icon on specific mobile screen sizes */
-@media (max-width: 425px) {
+
+ /* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header2{
+    width: 100%;
+  }
+  .navbar-logo2{
+    width:100%
+  }
+  .navbar-links2 {
+    display: none; /* Hide navbar links on smaller screens */
+  }
   .menu-icon2 {
-    display: flex;
+    display: flex; /* Show menu icon for mobile */
   }
 
-  .navbar-links2 {
-    display: none; /* Hide navigation items on small screens */
+  
+
+}
+@media (max-width: 320px) {
+  .header2{
+    width: 200px;
+    height: 80px;
+    
+    
   }
+  .navbar-logo2 {
+    width: 200px;
+    position: relative;
+    right: 30px;
+    height: 30px;
+
+}
+.school-name2 {
+  font-size: 1rem;
+  position: relative;
+  right: 20px;
+}
+.logo2{
+  height: 70px;
+  margin-left: 0px;
+
 }
 
-/* For screens larger than 425px, display nav items normally */
-@media (min-width: 426px) {
-  .navbar-links2 {
-    display: flex; /* Display navigation items */
-  }
 }
-
+@media (max-width: 1024px) {
+  .header2{
+    width: 100%;
+    height: 60px;
+  }
+  .navbar-links2 .navItem2 a {
+   width: 100%;
+  }
+  .navbar-links2 {
+    width:100%
+}
+.navbar-links2 {
+  gap: 30px;
+  width:800px;
+  position: relative;
+  left: 50px;
+}
+}

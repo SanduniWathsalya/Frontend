@@ -4,7 +4,9 @@ import React from 'react';
 import Header2 from './Headerblue';
 import Sidebar from './sidebar';
 import Dashboard from './admindashboard';
+
 import './adminlayout.css';
+
 
 const AdminLayout = () => {
   return (
@@ -12,6 +14,7 @@ const AdminLayout = () => {
       <Header2/>
       <Sidebar />
       <Dashboard />
+      
     </div>
   );
 };
