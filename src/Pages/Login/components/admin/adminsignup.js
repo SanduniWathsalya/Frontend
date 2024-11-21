@@ -1,11 +1,13 @@
 import React from 'react';
 import './adminsignup.css';
 import SignUpForm from './Signup';  
+import Header from '../../../Home/components/Header';
 
 
-function AdminLogin() {
+function AdminSignUp() {
   return (
     <div className="adminsignup">
+      <Header/>
       <main className="mainContent4">
         <div className="contentWrapper4">
           <SignUpForm/>
@@ -17,4 +19,4 @@ function AdminLogin() {
   );
 }
 
-export default AdminLogin;
+export default AdminSignUp;
