@@ -109,3 +109,12 @@
 2024-11-21 14:04:29.197 +05:30 [WRN] No ConfigurationItems have been defined, configuration won't surface any configuration from the client!
 2024-11-21 14:04:29.279 +05:30 [DBG] Finished: Routing Notification initialized in 439ms
 2024-11-21 14:04:29.280 +05:30 [DBG] Finished: Processing notification initialized in 442ms
+2024-11-21 20:34:28.161 +05:30 [DBG] Finding descriptors for $/setTrace
+2024-11-21 20:34:28.253 +05:30 [DBG] Swapping from "Serial" to "Parallel"
+2024-11-21 20:34:28.261 +05:30 [DBG] Completing existing request process type "Serial"
+2024-11-21 20:34:28.301 +05:30 [DBG] Queueing "Parallel":$/setTrace request for processing
+2024-11-21 20:34:28.383 +05:30 [DBG] Starting: Processing notification $/setTrace
+2024-11-21 20:34:28.413 +05:30 [DBG] Starting: Routing Notification $/setTrace
+2024-11-21 20:34:28.414 +05:30 [VRB] Converting params for Notification $/setTrace to OmniSharp.Extensions.LanguageServer.Protocol.Models.SetTraceParams
+2024-11-21 20:34:28.496 +05:30 [DBG] Finished: Routing Notification $/setTrace in 81ms
+2024-11-21 20:34:28.497 +05:30 [DBG] Finished: Processing notification $/setTrace in 84ms
