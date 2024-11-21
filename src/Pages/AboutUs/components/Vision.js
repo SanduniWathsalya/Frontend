@@ -4,7 +4,7 @@ import './Vision.css';
 function Vision() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = ["about1.jpeg", "about2.jpeg", "about3.jpeg", "about4.jpeg"]; // Array of image names
+  const images = ["vision1.jpeg", "vision2.jpeg", "vision3.jpeg", "vision4.jpeg"]; // Array of image names
 
   // Change image every 2 seconds
   useEffect(() => {
