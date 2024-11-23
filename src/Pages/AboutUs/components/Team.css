@@ -1,18 +1,130 @@
+/* General Styles */
 .team {
-  padding: 40px;
+  padding: 40px 20px;
   text-align: center;
   width: 100%;
+  background-color: rgba(212, 210, 246, 0.452);
 }
 
 .team h2 {
-  font-size:36px;
-    text-align: center;
-    font-weight: bold;
+  font-size: 2.25rem; /* Scalable font size */
+  text-align: center;
+  font-weight: bold;
 }
 
 .team p {
-  font-size: 18px;
-  width: 100%;
+  font-size: 1.2rem;
+  max-width: 90%; /* Ensure it adapts to smaller screens */
   margin: 20px auto;
 }
 
+/* Team Container */
+.team-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  justify-content: center;
+  gap: 40px; /* Reduced gap for better alignment */
+}
+
+/* Team Member */
+.team-member {
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%; /* Default to full width */
+  max-width: 250px; /* Limit max size for larger screens */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto; /* Allow flexibility for varying content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container */
+.image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Perfect circle for images */
+  overflow: hidden; /* Crop overflowing parts */
+  margin: 0 auto 10px auto;
+ 
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+/* Team Member Text */
+.team-member h3 {
+  font-size: 1.25rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .team {
+    position: relative;
+    bottom: 10px;
+    height: 1280px;
+  }
+  .team-container {
+    flex-direction: column; /* Stack team members vertically */
+    gap: 20px; /* Reduced gap for tighter stacking */
+   
+    align-items: center;
+
+  }
+  .team-member {
+    width: 90%; /* Ensure it doesn't exceed the screen width */
+    max-width: 300px;
+  }
+  .team p {
+    font-size: 15px;
+   
+  }
+}
+
+@media (max-width: 480px) {
+  .team h2 {
+    font-size: 1.75rem; /* Slightly smaller text */
+  }
+  .team p {
+    font-size: 0.9rem;
+  }
+  .image-container {
+    width: 120px;
+    height: 120px;
+  }
+  .team-member h3 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .team{
+    width: 100%;
+  }
+  .team-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: center;
+    gap: 10px; /* Reduced gap for better alignment */
+    width: 230px;
+   position: relative;
+   left: 50px;
+  }
+}

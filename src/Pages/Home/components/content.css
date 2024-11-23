@@ -1,0 +1,128 @@
+/* General Styles */
+.content-container {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 0;
+    width: 100%;
+  position: relative;
+    top: 2px;
+    
+  }
+  
+  /* Content Section */
+  .content-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgba(205, 193, 214, 1); /* Background color */
+  }
+  
+  .content-item {
+    text-align: left;
+    font-weight: bold;
+    color: rgba(22, 0, 65, 1);
+    padding: 20px;
+    position: relative;
+  }
+  
+  .content-item img {
+    width: 100%;
+    height: 250px; /* Reduce fixed height for better fit */
+    object-fit: cover;
+  }
+  
+  .content-item:hover img {
+    transform: scale(1.05); /* Slightly smaller zoom for a better experience */
+  }
+  
+  .content-item:hover {
+    transform: scale(1.05); 
+  }
+  
+  .aboutus-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .aboutus-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 1040px) {
+  
+  
+    .content-section {
+      padding: 15px; /* Adjust padding for smaller width */
+    }
+  
+    .content-item:hover img {
+      transform: scale(1.05); /* Slightly smaller zoom for a better experience */
+    }
+    
+    .content-item:hover {
+      transform: scale(1.05); 
+    }
+    
+  
+    .content-item img {
+      height: 220px;
+    }
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .content-section {
+      width: 100%;
+    }
+  
+    .content-item img {
+      height: 220px;
+      
+    }
+  }
+  
+  @media (max-width: 480px) {
+      .content-container {
+      display: flex;
+      background-size: cover;
+      background-position: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 1px 2px;
+      width:100%;
+      
+  
+    }
+ .content-section {
+      padding: 10px;
+    }
+  
+    .content-item img {
+      height: 200px;
+    }
+  }
+  @media(max-width:1024px){
+    .content-container{
+      width: 100%;
+    }
+
+  }
+  @media (max-width: 320px) {
+    .content-container{
+      width: 100%;
+     
+  }
+
+  }
+  
+  

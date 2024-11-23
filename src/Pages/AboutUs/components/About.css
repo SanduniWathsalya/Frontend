@@ -1,22 +1,40 @@
 .about1 {
-  padding: 0px 20px;
-  background-color: rgba(212, 210, 246, 1);
+  padding: 0px 40px;
+  background-color:rgba(212, 210, 246, 0.452);
   width: 100%;
-  height: 350px;
+  height: 420px;
+
+ 
 }
+.para{
+  padding: 40px;
+  background-color:rgba(212, 210, 246, 1);
+  width: 1300px;
+  height: 380px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+  border-radius: 10px;
+  position: relative;
+  right: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+.para:hover {
+  transform: scale(1.03); /* Scale the container for a pop-up effect */
+}
+
 
 .about1 h2 {
   font-size:36px;
-  text-align: center;
-  padding: 2px;
+ 
   font-weight: bold;
-  position: relative;
-  left: 220px;
+text-align: center;
+
 }
 
 .about-content1 {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  white-space: none;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -29,6 +47,8 @@
   margin: 10px auto; /* Center image on smaller screens */
   position: relative;
   top: 10px;
+  margin-left: 40px;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 .about1 p {
@@ -42,22 +62,66 @@
 
 /* Responsive styling */
 @media (max-width: 768px) {
+  .about1 {
+   
+    height: 490px;
+    width: 100%;
+  }
+  .para{
+    width: 100%;
+    margin-left: 20px;
+    height: 480px;
+    
+  }
   .about-content1 {
     width: 100%;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: row; /* Stack elements vertically */
     align-items: center;
     text-align: center; /* Center-align content on smaller screens */
+   
   }
-
+  .about1 h2 {
+    text-align: center;
+    
+    position: relative;
+    left: 20px;
+  }
   .about1 p {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 5px; /* Reduce padding for smaller screens */
+    text-align: center;
+    font-size: 15px;
   }
 
   .about1 img {
-    max-width: 300px; /* Adjust max width for smaller screens */
+    width: 300px; /* Adjust max width for smaller screens */
+    position: relative;
+    right: 50px;
+   
+    height: 300px;
   }
 
   .about1 h2 {
     font-size: 24px; /* Adjust heading size for smaller screens */
   }
+}
+@media (max-width: 375px) {
+  .about1{
+    width: 100%;
+     padding: 0px 40px;
+      background-color:rgba(212, 210, 246, 0.452);
+      height: 680px;
+}
+.para{
+  position: relative;
+  bottom: 40px;
+  height: 730px;
+  }
+  .about1 img {
+    width: 220px; /* Adjust max width for smaller screens */
+    position: relative;
+    right: 50px;
+   
+    height: 200px;
+  }
+
 }

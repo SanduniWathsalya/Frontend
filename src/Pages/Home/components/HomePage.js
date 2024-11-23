@@ -1,36 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './HomePage.css';
-import { Link } from 'react-router-dom';
+
+const heroTexts = [
+  {
+    h1: ["Faith,", "Community And", "Excellence"],
+    p: "Education is an environment of faith and virtue."
+  },
+  {
+    h1: ["Better", "Education", "for an amazing world"],
+    p: "Shaping the future with knowledge and values."
+  },
+  {
+    h1: ["Best", "place to", "manage your institute"],
+    p: "Experience the excellence of modern education."
+  }
+];
 
 function HomePage() {
-  return (
-    <div className="home-container">
-       <div className="hero">
-     <img src="Homepage.jpg" alt="Students Learning" ></img>
-     </div>
-      {/* Hero Section */}
-      <div className="hero-text">
-        <h1>Faith,<br/> Community And <br/>Excellence</h1>
-        <p>Education is an environment of faith and virtue.</p>
-      </div>
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-      {/* Content Section */}
-      <div className="content-section">
-      
-        <div className="content-item">
-          <img src="OIP (1).jpg" alt="School Building" />
-          <Link to="/About" className="aboutus-link">Who we are →</Link>
-         
-        </div>
-        <div className="content-item">
-          <img src="download.jpg" alt="Students Learning" />
-          <a href="#" className="content-link">Academic →</a>
-        </div>
-        <div className="content-item">
-          <img src="community.jpg" alt="Community" />
-          <a href="#" className="content-link">Community →</a>
-        </div>
-        
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % heroTexts.length);
+    }, 4500); // Change text every 4.5 seconds (matching animation)
+    
+    return () => clearInterval(interval); // Cleanup on component unmount
+  }, []);
+  
+  const currentText = heroTexts[currentIndex];
+
+  return (
+    <div className="hero">
+      <div className="hero-text">
+        <h1>
+          {currentText.h1.map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
+        </h1>
+        <p>{currentText.p}</p>
       </div>
     </div>
   );

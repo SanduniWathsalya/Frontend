@@ -1,21 +1,91 @@
 .img {
-  padding: 40px;
+  padding: 20px;
+  background-color: rgba(212, 210, 246, 0.452);
+  height: 400px; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Align content vertically for better mobile layout */
 }
 
 .stats {
   display: flex;
- margin-left: 30px;
-  margin-top: 30px;
-  gap: 100px;
-  width: 100%;
+  flex-wrap: nowrap; /* Enable wrapping for smaller screens */
+  justify-content: center; /* Center align on all screens */
+  margin: 30px auto; /* Center with auto margin */
+  gap: 150px; /* Adjust gap between items */
+  
 }
 
 .stats div {
   text-align: center;
+  flex: 1 1 300px; /* Make each item flexible and responsive */
+ width: 500px; /* Prevent items from becoming too large */
 }
 
 .stats img {
-  width: 500px;
-  height: 350px;
-  margin-bottom: 10px;
+  width: 800px; /* Scale image to fit container */
+  height: 300px;; /* Maintain aspect ratio */
+  border-radius: 5px;
+}
+
+/* Media Queries for Device Compatibility */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+  .img {
+   height: 300px;
+   position: relative;
+   bottom: 10px;
+  }
+  .stats {
+    height: 250px;
+    gap: 30px; /* Reduce gap for smaller screens */
+    width: 95%; /* Adjust width for tablets */
+    flex-direction: row; /* Stack items vertically */
+    gap: 20px; /* Smaller gap between stacked items */
+
+  }
+
+  .stats div {
+    flex: 1 1 100%; /* Allow items to take full width on small screens */
+  }
+
+  .stats img {
+    width: 340px; /* Ensure images scale within their container */
+    height: 200px; /* Maintain aspect ratio */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .img {
+    padding: 10px; /* Reduce padding for small screens */
+  }
+
+  .stats {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Smaller gap between stacked items */
+  }
+
+  .stats div {
+    margin: 0 auto; /* Center individual items */
+  }
+
+  .stats img {
+    max-width: 90%; /* Scale down images for smaller screens */
+    height: auto;
+  }
+}
+@media (max-width: 375px) {
+  .img{
+    width: 100%;
+    height: 400px;
+  }
+  .stats{
+    position: relative;
+    bottom: 80px;
+    gap: 40px;
+  }
 }

@@ -1,37 +1,98 @@
 .journey {
   padding: 40px;
-  background-color: rgba(212, 210, 246, 1);
+  background-color: rgba(212, 210, 246, 0.452);
   text-align: center;
   width: 100%;
-  
 }
 
-.journey h2 {
-    font-size:36px;
-    text-align: center;
-    font-weight: bold;
-
-}
-
-.journey p {
-  font-size: 18px;
-  width: 100%; 
-  margin: 20px 0; 
-  padding: 0 20px; .journey {
+.para3 {
   padding: 40px;
   background-color: rgba(212, 210, 246, 1);
-  text-align: center;
+  width: 100%; /* Adjust width for responsiveness */
+ 
+  height: 250px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.para3:hover {
+  transform: scale(1.03); /* Subtle scaling effect */
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .journey h2 {
-  font-size: 32px;
+  font-size: 2rem; /* Use relative units for better scaling */
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .journey p {
-  font-size: 18px;
-  width: 100%; 
-  margin: 20px 0; 
+  font-size: 18px; /* Use relative units for font size */
+  width: 100%;
+  margin: 20px 0;
   padding: 0 20px;
 }
 
+/* Media Queries for Device Compatibility */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .journey {
+    padding: 30px;
+    position: relative;
+    bottom: 10px;
+    height: 300px;
+  }
+
+  .para3 {
+    width: 95%; /* Reduce width for smaller screens */
+    padding: 20px; /* Adjust padding */
+    margin: 10px auto; /* Add spacing for stacked layout */
+  }
+
+  .journey h2 {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .journey p {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .journey {
+    padding: 20px;
+  }
+
+  .para3 {
+    padding: 15px;
+    width: 100%; /* Full width for small screens */
+    margin: 10px auto;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for mobile */
+  }
+
+  .journey h2 {
+    font-size: 1.5rem; /* Smaller heading */
+  }
+
+  .journey p {
+    font-size: 0.8rem; /* Adjust font size for readability */
+    padding: 0 10px; /* Reduce padding */
+  }
+}
+@media (max-width: 375px) {
+  .journey{
+    width: 100%;
+    height: 300px;
+  }
+  .para3{
+    height: 300px;
+    position: relative;
+    bottom: 40px;
+  }
 }
