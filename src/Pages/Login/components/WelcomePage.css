@@ -101,10 +101,10 @@
 
 
 .login-card button:hover {
+ 
   transform: scale(1.15); /* Increase scale for the pop-up effect */
-    opacity: 0.65; /* Reduce opacity slightly for a smoother hover effect */
+  opacity: 0.65; /* Reduce opacity slightly for a smoother hover effect */
 }
-
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
   .login-card {
@@ -158,13 +158,14 @@
 }
 @media (max-width: 375px) {
  .content {
-    width: 100%;
+    width: 610px;
     height: 920px;
   }
   .content h1 {
     position: relative;
     top: 40px;
-   font-size:3px;
+    right: 12px;
+    font-size:1.5em;
    
   }
   .content h2 {
@@ -175,21 +176,21 @@
   .login-options{
     position: relative;
     top: 100px;
-    width: 100%;
+    width: 600px;
     height: 700px;
   }
   .login-card {
     text-align: center;
     flex: 0 0 100%; /* Only one card displays at a time */
-    width: 100%;
+    max-width: 568px;
     scroll-snap-align: center;
     height: 700px;
   }
   .login-card img {
     position: relative;
-    left: 20px;
-    width: 300px;
-    height: 300px;
+    left: 80px;
+    width: 400px;
+    height: 400px;
   
   }
   .scroll-btn.left {
