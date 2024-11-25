@@ -174,7 +174,7 @@
 }
 @media (max-width: 320px) {
   .header2{
-    width: 200px;
+    width: 100%;
     height: 80px;
     
     
@@ -195,6 +195,13 @@
   height: 70px;
   margin-left: 0px;
 
+}
+@media(max-width:375px){
+  .header2{
+    width: 100%;
+    
+
+  }
 }
 
 }

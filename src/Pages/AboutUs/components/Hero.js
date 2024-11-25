@@ -7,7 +7,7 @@ function Hero() {
       
       <div className="hero-content2">
        <div className="hero-image2">
-          <img src="vision2.jpeg" alt="Web Development" />
+          <img src="about_hero.png" alt="Web Development" />
         </div>
       
         <div className="hero-text2">

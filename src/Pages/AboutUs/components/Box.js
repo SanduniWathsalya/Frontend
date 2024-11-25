@@ -6,10 +6,10 @@ function Box() {
     <section className="img">
       <div className="stats">
         <div>
-          <img src="OIP (1).jpeg" alt="Live Projects" />
+          <img src="box1.png" alt="Live Projects" />
         </div>
         <div>
-          <img src="OIP (2).jpeg" alt="Staff" />
+          <img src="box2.png" alt="Staff" />
         </div>
        
       </div>
