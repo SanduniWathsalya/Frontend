@@ -152,9 +152,7 @@
   color: rgba(84, 76, 173, 0.96);
 }
 
-
-
- /* Responsive Adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .header2{
     width: 100%;
@@ -169,16 +167,12 @@
     display: flex; /* Show menu icon for mobile */
   }
 
-  
-
 }
 @media (max-width: 320px) {
   .header2{
     width: 100%;
     height: 80px;
-    
-    
-  }
+}
   .navbar-logo2 {
     width: 200px;
     position: relative;
@@ -199,12 +193,15 @@
 @media(max-width:375px){
   .header2{
     width: 100%;
-    
-
+  }
+}
+}
+@media (max-width: 425px) {
+  .header2{
+    width: 100%;
   }
 }
 
-}
 @media (max-width: 1024px) {
   .header2{
     width: 100%;

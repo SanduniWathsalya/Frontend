@@ -125,15 +125,18 @@
   .para2{
     height: 440px;
   }
-  .slider-container img {
-    
-  }
-  
-  .vision-slider {
+ .vision-slider {
     height: 300px;
     width: 370px;
     position: relative;
     right: 50px;
-    
+}
+}
+@media (max-width: 425px) {
+  .vision {
+    height: 900px;
+}
+  .para2{
+    height: 350px;
 }
 }
