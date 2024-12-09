@@ -88,4 +88,7 @@
     bottom: 80px;
     gap: 40px;
   }
+  .stats div {
+    width: 100%;
+}
 }
