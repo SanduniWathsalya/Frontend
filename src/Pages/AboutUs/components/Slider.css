@@ -1,0 +1,92 @@
+.slider {
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    background-color:rgba(212, 210, 246, 0.452);
+    height: 500px;
+ }
+  
+.slider-container {
+    position: relative;
+    width:100%;
+    height: 300px;
+    display: flex; /* Ensures images stack properly */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .slider-container img {
+    width:100%;
+    height: 400px;
+    object-fit: fill; /* Ensure images fully cover the container */
+    position: absolute; /* Stack all images in the same position */
+    top: 50px;
+  
+    opacity: 0; /* Initially, images are invisible */
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+    padding: 0; /* Remove any padding */
+    border: none; /* Ensure no border is applied to the images */
+    outline: none; /* Remove outline if applied */
+    margin: 0; /* Remove any margin around images */
+   
+  }
+  
+  .slider-container img.active {
+    opacity: 1; /* Show the active image */
+    z-index: 1; /* Ensure the active image is on top */
+  }
+  @media (max-width: 768px) {
+    .slider{
+      padding: 10px;
+      width: 100%;
+      position: relative;
+      margin: 0;
+      height: 250px;
+    }
+    
+    .slider-container {
+      height: 200px;
+      width: 300px;
+      
+  }
+  .slider-container img{
+    width: 100%;
+  }
+  }
+  
+  @media (max-width: 1024px) {
+    .slider {
+  
+      
+      margin: 5px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 375px) {
+    .slider{
+      width: 100%;
+    }
+    
+   .vision-slider {
+      height: 300px;
+      width: 100%;
+      
+  }
+  }
+  @media (max-width: 425px) {
+    .slider {
+      height: 300px;
+      margin: 0;
+  }
+  .slider-container {
+    height: 300px;
+    width: 100%;
+    margin-top: 0;
+    
+}
+  .slider-container img{
+    width: 100%;
+    height: 200px;
+  }
+  }

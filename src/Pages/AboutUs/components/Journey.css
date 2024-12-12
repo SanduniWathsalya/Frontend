@@ -1,5 +1,5 @@
 .journey {
-  padding: 40px;
+  padding: 20px;
   background-color: rgba(212, 210, 246, 0.452);
   text-align: center;
   width: 100%;
@@ -9,7 +9,6 @@
   padding: 40px;
   background-color: rgba(212, 210, 246, 1);
   width: 100%; /* Adjust width for responsiveness */
- 
   height: 250px;
   margin: 0 auto;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
@@ -42,10 +41,9 @@
 /* For tablets and smaller screens */
 @media (max-width: 768px) {
   .journey {
-    padding: 30px;
-    position: relative;
-    bottom: 10px;
+    padding: 40px;
     height: 300px;
+    margin: 0;
   }
 
   .para3 {
@@ -95,4 +93,16 @@
     position: relative;
     bottom: 40px;
   }
+}
+@media (max-width: 425px) {
+  .journey{
+    padding: 40px;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+}
+.para3 {
+  width: 100%;
+  height: 300px;
+}
 }

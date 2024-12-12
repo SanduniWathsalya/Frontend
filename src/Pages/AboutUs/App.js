@@ -5,6 +5,7 @@ import Header2 from '../Login/components/admin/Headerblue';
 import Hero from './components/Hero';
 import About from './components/About';
 import Vision from './components/Vision';
+import Slider from './components/Slider';
 import Journey from './components/Journey';
 import Team from './components/Team';
 import ChooseUs from './components/ChooseUs';
@@ -20,6 +21,7 @@ function App() {
       <Hero />
       <About />
       <Vision />
+      <Slider />
       <Journey />
       <Team />
       <ChooseUs />

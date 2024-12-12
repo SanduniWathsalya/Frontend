@@ -156,6 +156,7 @@
 @media (max-width: 768px) {
   .header2{
     width: 100%;
+    height: 60px;
   }
   .navbar-logo2{
     width:100%
@@ -190,16 +191,6 @@
   margin-left: 0px;
 
 }
-@media(max-width:375px){
-  .header2{
-    width: 100%;
-  }
-}
-}
-@media (max-width: 425px) {
-  .header2{
-    width: 100%;
-  }
 }
 
 @media (max-width: 1024px) {
