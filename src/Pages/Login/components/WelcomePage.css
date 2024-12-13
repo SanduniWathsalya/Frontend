@@ -1,5 +1,5 @@
 .content {
-  padding: 70px 20px;
+  padding: 90px 20px;
   width: 100%;
   background-color: rgba(212, 210, 246, 1);
 }
@@ -59,7 +59,7 @@
   width: 100%;
   scroll-snap-type: x mandatory;
   position: relative;
-  left: 180px;
+  justify-content: center;
 }
 
 .login-card {
@@ -75,13 +75,13 @@
   height: 280px;
   object-fit: cover;
   border-radius: 50%;
-  position: relative;
-  left: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .login-card h3{
   color: black;
-  position: relative;
-  left: -5px;
+  font-size: 1.2em;
+ 
 }
 
 /* Login Card Button */
@@ -89,14 +89,13 @@
   background-color: #3e0a84;
   color: white;
   border: none;
-  padding: 10px 18px;
+  padding: 8px 20px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.1em;
   transform: scale(1);
   transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for smooth effect */
-  position: relative;
-  left: -5px;
+  margin-top: 10px;
 }
 
 
@@ -106,7 +105,99 @@
   opacity: 0.65; /* Reduce opacity slightly for a smoother hover effect */
 }
 /* Media Query for Mobile Screens */
-@media (max-width: 768px) {
+@media (max-width: 320px) {
+  .content{
+    width: 100%;
+    height: 500px;
+    
+  }
+  .content h1 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .content h2{
+    font-size: 1em;
+    text-align: center;
+  }
+  .login-options{
+    position: relative;
+ 
+  }
+  
+  .login-card img {
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+}
+ /*--------------------------------*/
+
+ @media (max-width: 375px) {
+  .content {
+     width: 100%;
+     height: 420px;
+   }
+   .content h1 {
+     position: relative;
+     top: 40px;
+     right: 12px;
+     font-size:1.5em;
+    
+   }
+   .content h2 {
+     position: relative;
+     top: 40px;
+     font-size: 2.5em;
+   }
+   .login-options{
+     position: relative;
+     top: 100px;
+     width: 600px;
+     height: 700px;
+   }
+   .login-card {
+     text-align: center;
+     flex: 0 0 100%; /* Only one card displays at a time */
+     max-width: 568px;
+     scroll-snap-align: center;
+     height: 700px;
+   }
+   .login-card img {
+     position: relative;
+     left: 80px;
+     width: 400px;
+     height: 400px;
+   
+   }
+   .scroll-btn.left {
+     top:280px;
+   }
+   
+   .scroll-btn.right {
+     top:280px;
+   }
+   /* Login Card Button */
+ .login-card button {
+ font-size: 1.5em;
+   
+ }
+ .login-card h3{
+   font-size: 2em;
+   color: black;
+   position: relative;
+   left: -5px;
+ }
+ 
+   
+ }
+/*-----------------------------------------*/
+@media (max-width: 425px) {
+  .content{
+    width: 100%;
+    height: 700px;
+  }
   .login-card {
     text-align: center;
     flex: 0 0 100%; /* Only one card displays at a time */
@@ -114,20 +205,13 @@
     scroll-snap-align: center;
   }
   .login-card img {
-    position: relative;
-    left: 250px;
+   margin-left: 60px;
     width: 220px;
     height: 220px;
   }
   
-  .scroll-btn {
-    display: block; /* Show scroll buttons on mobile */
-  }
-  .content{
-    width: 100%;
-  }
   .content h1 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-top: 10px;
     white-space: nowrap;
   }
@@ -137,84 +221,84 @@
   }
   .login-options{
     position: relative;
-    left: 80px;
+    justify-content: center;
+   
   }
   
   .login-card h3{
+    text-align: center;
+   
+    
+  }
+ 
+}
+/*-----------------------------------------------*/
+
+@media (max-width: 768px){
+  .content{
+    width: 100%;
+    height:750px;
+  }
+  
+  .login-card {
+    text-align: center;
+    flex: 0 0 100%; /* Only one card displays at a time */
+    max-width: 768px;
+    height: 400px;
+    scroll-snap-align: center;
+    
+  }
+  .login-options{
+    height: 500px;
     position: relative;
-    top: 10px;
-    right:30px;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+  .login-card img {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 180px;
+  }
+  
+  .scroll-btn {
+    display: block; /* Show scroll buttons on mobile */
+    margin-top: 80px;
+  }
+  
+  .content h1 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    white-space: nowrap;
+
+  }
+  
+  .content h2 {
+    font-size: 1.8em;
+  }
+  
+  
+  .login-card h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+   
+    
   }
   .login-card button {
     padding: 3px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.2em;
     transition: background-color 0.3s ease;
-    position: relative;
-    top: 20px;
-    right: 25px;
+    margin-top: 20px;
   }
 }
-@media (max-width: 375px) {
- .content {
-    width: 610px;
-    height: 920px;
-  }
-  .content h1 {
-    position: relative;
-    top: 40px;
-    right: 12px;
-    font-size:1.5em;
-   
-  }
-  .content h2 {
-    position: relative;
-    top: 40px;
-    font-size: 2.5em;
-  }
-  .login-options{
-    position: relative;
-    top: 100px;
-    width: 600px;
-    height: 700px;
-  }
-  .login-card {
-    text-align: center;
-    flex: 0 0 100%; /* Only one card displays at a time */
-    max-width: 568px;
-    scroll-snap-align: center;
-    height: 700px;
-  }
-  .login-card img {
-    position: relative;
-    left: 80px;
-    width: 400px;
-    height: 400px;
-  
-  }
-  .scroll-btn.left {
-    top:280px;
-  }
-  
-  .scroll-btn.right {
-    top:280px;
-  }
-  /* Login Card Button */
-.login-card button {
-font-size: 1.5em;
-  
-}
-.login-card h3{
-  font-size: 2em;
-  color: black;
-  position: relative;
-  left: -5px;
-}
+/*-----------------------------------------*/
 
-  
-}
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
   .login-options{
     position: relative;
     left: 1px;
@@ -226,25 +310,4 @@ font-size: 1.5em;
   }
 }
 
-@media (max-width: 320px) {
-  .content{
-    width: 100%;
-  }
-  .content h1 {
-    font-size: 1.2em;
-    margin-top: 10px;
-    white-space: nowrap;
-  }
-  .login-options{
-    position: relative;
-    left: 10px;
-  }
-  
-  .login-card img {
-    position: relative;
-    left: 20px;
-  
-  }
-  
 
-}
