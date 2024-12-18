@@ -149,13 +149,8 @@
   margin-top: 5px; /* Optional, to create some space between the input field and the error */
 }
 @media (max-width: 768px) {
-  .contentWrapper2{
-    position: relative;
-    top: 120px;
-    
-  }
   .adminlogin{
-    height: 800px;
+    height: 820px;
   }
 
   .loginImage2 {
@@ -169,17 +164,13 @@
   .loginFormSection2 {
     width: 100%;
     position: relative;
-    top: 120px;
-    
-    
-  }
+    top: 150px;
+}
 
   .mainContent2 {
-    height: 630px;
-    position: relative;
-    bottom: 58px; /* Allow flexible height on smaller screens */
-    width:300px
-  
-  }
+    height: 580px;
+    width:300px;
+    margin-top: 190px;
+}
 
 }

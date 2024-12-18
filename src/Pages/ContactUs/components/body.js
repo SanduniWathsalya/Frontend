@@ -77,8 +77,8 @@ function Body() {
       {/* Contact Details */}
       <div className="contactDetails">
         <div className="detailsRow">
-          <p><FaMapMarkerAlt /> 12th Street, Kumarathunga Mawatha, Colombo 07, Sri Lanka</p>
-          <p><FaEnvelope /> abc@gmail.com</p>
+          <p><FaMapMarkerAlt /> Institute of Alexandria, Sri Jayawardenepura Kotte</p>
+          <p><FaEnvelope /> brillientstarschoolproject@gmail.com</p>
           <p><FaPhoneAlt /> (011) 234 5567</p>
         </div>
         <div className="map">

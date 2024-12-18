@@ -12,8 +12,8 @@ import LoginFormTeacher from './Pages/Login/components/teacher/teacherlogin';
 import LoginFormStudent from './Pages/Login/components/student/studentlogin';
 import WelcomePage2 from './Pages/Register/components/WelcomePage2';
 import RegisterFormMI from './Pages/Register/components/mass institute/massregister';
-import RegisterFormSchool from './Pages/Register/components/school/RegisterFormSchool';
-import RegisterFormSI from './Pages/Register/components/small institute/RegisterFormSI';
+import RegisterFormSchool from './Pages/Register/components/school/schoolregister';
+import RegisterFormSI from './Pages/Register/components/small institute/smallregister';
 import AdminLayout from './Pages/Login/components/admin/adminlayout';
 
 

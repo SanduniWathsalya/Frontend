@@ -13,7 +13,8 @@
     padding: 20px;
     border-radius: 5px;
     margin-top: 60px;
-    height: 550px;
+    height: 600px;
+    margin-bottom: 35px;
   }
 
 .bodyForm h2 {
@@ -44,11 +45,13 @@
     font-family: Inter, sans-serif;
     font-size: 16px;
     text-align: left;
-
+    display: block; /* Ensures the label is displayed on a new line */
+    
 }
 
+
 .form-body input, .form-body textarea {
-    width: 82%; /* Full width for better flexibility on all screen sizes */
+    width: 95%; /* Full width for better flexibility on all screen sizes */
     padding: 10px; 
     margin: 5px 0;
     background-color: #F4F2FF;
@@ -111,18 +114,17 @@
 }
 
 .map iframe {
-   width:730px ; /* Full width on all screens */
+   width:100%; /* Full width on all screens */
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
     border-radius: 0px;
-    height: 450px;
+    height: 500px;
     
     
 }
 
 .contactDetails {
     flex: 2; /* Allow details to take up available space */
-    width: 500px; /* Optional: Set a max width for details */
-   
+    width: 600px; /* Optional: Set a max width for details */
     padding: 10px;
     border-radius: 5px;
     margin-top: 60px;
@@ -133,24 +135,25 @@
   .detailsRow {
     display: flex; /* Arrange items in a row */
     flex-wrap: nowrap; /* Wrap items if space is insufficient */
-    gap: 20px; /* Add spacing between items */
+    gap: 15px; /* Add spacing between items */
     align-items: center; /* Align items vertically */
     background-color:#D4D2F6;
-    width: 730px; /* Optional: Set a max width for details */
-   height: 50px;
+    width: 100%; /* Optional: Set a max width for details */
+    height: 60px;
     padding: 8px;
     border-radius: 5px;
+    
   }
   
   
 .detailsRow p {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-family: Inter, sans-serif;
     color: #050505;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 18px;
   }
   
   .detailsRow p svg {
@@ -192,13 +195,7 @@
       .map iframe {
         width:530px ; /* Full width on all screens */
          height: 350px;
-      
-        
-
-        
-        
-         
-     }
+        }
       
 
     .line {
@@ -221,34 +218,39 @@
         width: 100%; /* Full width line on small screens */
     }
 
+    .contactDetails {
+        width: 100%; /* Full width for small devices */
+       margin: 30px 0;
+       
+      }
     
-    .map iframe {
-        width:280px ; /* Full width on all screens */
-         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
-         border-radius: 0px;
-         height: 350px;
-         position: relative;
-         bottom: 50px;
-         right: 20px;
-         margin: 10px;
-         margin-bottom: 10px;
-         
-     }
     .detailsRow {
         display: flex; /* Use flexbox layout */
         flex-direction: column; /* Stack items vertically */
         gap: 20px; /* Add spacing between each item */
         align-items: flex-start; /* Align items to the left */
         background-color: #D4D2F6;
-        width: 280px; /* Optional: Set a max width for details */
+        width: 100%;
         height: auto; /* Let the height adjust to content */
-        padding: 18px;
         position: relative;
-       bottom: 80px;
-       right: 10px;
+        bottom: 80px;
+  
       }
-      .detailsRow p{
-        text-align: center;
+    .detailsRow p{
+        text-align:left;
+        font-size: 1em;
         
       }
+     
+    .map iframe {
+        width:100% ; /* Full width on all screens */
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+        border-radius: 0px;
+        height: 350px;
+        position: relative;
+        bottom: 40px;
+        margin-bottom: 10px;
+         
+     }
+    
     }    

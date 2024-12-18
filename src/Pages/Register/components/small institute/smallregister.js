@@ -1,12 +1,12 @@
 import React from 'react';
 import './smallregister.css';
 import RegisterForm2 from './RegisterFormSI';
-
+import Header from '../../../Home/components/Header'
 
 function SIRegister() {
   return (
-    <div className="SIregister5">
-      
+    <div className="SIregister">
+     <Header/>   
       <main className="SImainContent">
         <div className="SIcontentWrapper">
           <RegisterForm2 />

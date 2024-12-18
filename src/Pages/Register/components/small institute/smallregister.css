@@ -1,26 +1,27 @@
-.SIregister5{
+.SIregister{
   display: flex;
-  height: 650px;
+  height: 100vh;
   background-color: hwb(253 47% 5%);
-  
-  
-  
+  justify-content: center;
 }
 
 .SImainContent {
-  max-width: 780px; /* Set a max-width for larger screens */
-  height: 480px;
+  width: 780px; /* Set a max-width for larger screens */
+  height: 530px;
   margin: auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   border-radius: 10px;
   margin-bottom: 42px;
+  display: flex;
+  flex-direction: column;
 }
 
 
 .SIcontentWrapper {
   display: flex;
-  width: 780px;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   
@@ -28,13 +29,12 @@
 
 .SIImage {
   width: 50%;
-  height: 480px;
+  height: 530px;
   background-image: url('../../../../../public/tuition-920.jpg'); /* Update with correct path */
   background-size: cover;
   background-position: center;
-  border-radius: 0 10px 10px 0;
-  position: relative;
-  bottom: 8px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
   
 }
 
@@ -47,7 +47,13 @@
   justify-content: center;
 }
 
+.SIFormSection  h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(20, 12, 115, 0.96);
+ margin-bottom: 20px;
 
+}
 
 .SIinputGroup {
   margin-bottom: 15px;
@@ -85,4 +91,38 @@
 .SIRegisterButton:hover {
   background-color: #5a52e0;
 }
+
+
+@media (max-width: 768px) {
+  .SIregister{
+    height: 880px;
+  }
+
+  .SIImage {
+    width: 100%;
+    height: 200px; /* Adjust height for smaller screens */
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    bottom: 530px;
+  }
+
+  .SIFormSection {
+    width: 100%;
+    position: relative;
+    top: 180px;
+  }
+  .SIFormSection  h2{
+    font-size: 1.1rem;
+   margin-bottom: 20px;
+   }
+
+   .SImainContent {
+    height:750px;
+    width:300px;
+    margin-top: 60px;
+  
+  }
+
+}
+
 
