@@ -1,11 +1,10 @@
 /* Main Events Section */
 .events-section {
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   position: relative;
   top: -60px;
   height: auto; /* Set to auto for dynamic height based on content */
-  max-width: 1200px; /* Optional: for centering with a max width */
   margin: 0 auto; /* Center the section */
 }
 
@@ -23,9 +22,8 @@
 .event-item {
   position: relative;
   width: 100%;
-  max-width: 100%; /* Ensure full width for responsiveness */
-  margin: 0 auto;
-  padding-top: 56.25%; /* 16:9 aspect ratio for responsive height */
+  margin: 10px 0;
+  padding-top: 30%; /* 16:9 aspect ratio for responsive height */
   overflow: hidden;
   border-radius: 10px; /* Optional: for rounded corners */
 }

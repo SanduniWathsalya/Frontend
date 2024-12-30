@@ -513,3 +513,19 @@ OmniSharp.Extensions.JsonRpc.InputProcessingException: There was an error proces
 2024-12-18 16:23:52.966 +05:30 [VRB] Converting params for Notification $/setTrace to OmniSharp.Extensions.LanguageServer.Protocol.Models.SetTraceParams
 2024-12-18 16:23:52.986 +05:30 [DBG] Finished: Routing Notification $/setTrace in 20ms
 2024-12-18 16:23:52.987 +05:30 [DBG] Finished: Processing notification $/setTrace in 25ms
+2024-12-18 17:16:10.397 +05:30 [DBG] Finding descriptors for shutdown
+2024-12-18 17:16:10.472 +05:30 [DBG] Swapping from "Parallel" to "Serial"
+2024-12-18 17:16:10.473 +05:30 [DBG] Cancelling any outstanding requests (switch from parallel to serial)
+2024-12-18 17:16:10.474 +05:30 [DBG] Completing existing request process type "Parallel"
+2024-12-18 17:16:10.475 +05:30 [DBG] Queueing "Serial":shutdown:1 request for processing
+2024-12-18 17:16:10.477 +05:30 [DBG] Starting: Processing request shutdown 1
+2024-12-18 17:16:10.478 +05:30 [DBG] Starting: Routing Request (1) shutdown
+2024-12-18 17:16:10.478 +05:30 [VRB] Converting params for Request (1) shutdown to OmniSharp.Extensions.LanguageServer.Protocol.Models.ShutdownParams
+2024-12-18 17:16:10.479 +05:30 [VRB] Converting params for Notification shutdown to OmniSharp.Extensions.LanguageServer.Protocol.Models.ShutdownParams
+2024-12-18 17:16:10.598 +05:30 [VRB] Could not write to output handler, perhaps serialization failed?
+System.Threading.Channels.ChannelClosedException: The channel has been closed.
+   at System.Threading.Channels.AsyncOperation`1.GetResult(Int16 token)
+   at OmniSharp.Extensions.JsonRpc.OutputHandler.ProcessOutputStream(CancellationToken cancellationToken)
+2024-12-18 17:16:10.621 +05:30 [VRB] Response value was null
+2024-12-18 17:16:10.731 +05:30 [DBG] Finished: Routing Request (1) shutdown in 252ms
+2024-12-18 17:16:10.732 +05:30 [DBG] Finished: Processing request shutdown 1 in 254ms
